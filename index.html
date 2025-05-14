@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Career Path Recommender</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-2xl mx-auto p-6 mt-10 bg-white shadow-2xl rounded-2xl">
+    <h1 class="text-3xl font-bold text-center mb-6">AI Career Path Recommender</h1>
+    
+    <form id="careerForm" class="space-y-4">
+      <div>
+        <label class="block font-medium mb-1">Your Preferred Work Type:</label>
+        <select id="workType" class="w-full border p-2 rounded">
+          <option>Data-driven decision making</option>
+          <option>Creative problem solving</option>
+          <option>Customer interaction</option>
+          <option>System design & architecture</option>
+        </select>
+      </div>
+      
+      <div>
+        <label class="block font-medium mb-1">Your Strongest Skill Area:</label>
+        <select id="skillArea" class="w-full border p-2 rounded">
+          <option>Mathematics & Statistics</option>
+          <option>Programming</option>
+          <option>Communication</option>
+          <option>Logic & Design</option>
+        </select>
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Recommend Career Path</button>
+    </form>
+
+    <div id="result" class="mt-6 text-xl font-semibold text-center"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
